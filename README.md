@@ -1,1 +1,1 @@
-# lpl-propgen-prototype
+# Repo to hold various design prototypes
