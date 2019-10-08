@@ -1,0 +1,43 @@
+// Logo Swap
+.logoswap-enter-active {
+   animation: logo-in .3s;
+}
+.logoswap-leave-active {
+   animation: logo-in .3s reverse;
+}
+@keyframes logo-in {
+   0% {
+      transform: scale(.6);
+   }
+
+   50% {
+      transform: scale(1.1);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+// Option One
+.pageOut {
+   animation: pageOutKey .8s ease-in-out both;
+}
+@keyframes pageOutKey { 
+   from {
+   }
+	to { 
+      opacity: 0;
+   }
+}
+
+.pageIn {
+   animation: pageInKey .8s ease both;
+   //transform-origin: 50% 0;
+}
+@keyframes pageInKey {
+	from { 
+      opacity: 0; 
+      //transform: scale(.85); 
+   }
+}

@@ -1,0 +1,22 @@
+{
+   "about": {
+      "products": [
+         {
+            "id": 1,
+            "name": "Skookum Hat",
+            "description": "6.1-ounce, 100% cotton, Double-needle neck, sleeves and hem; Roomy Unisex Fit, Ash is 99% cotton, 1% poly; Sport Grey is 90% cotton, 10% poly; Dark Heather is 50% cotton, 50% polyester",
+            "image": "/img/skookum-hat.jpg",
+            "alt": "Skookum Hat",
+            "linkTitle": "Buy Skookum Hat",
+            "url": "https://matonee.com/skookum-logo-trucker-cap-navy-white"
+         }
+      ]
+   },
+   "home": [
+      {
+         "id": 1,
+         "h1": "Hello World",
+         "h2": "This is H2 Content."
+      }
+   ]
+}
