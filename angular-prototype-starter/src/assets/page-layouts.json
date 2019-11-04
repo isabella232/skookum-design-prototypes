@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Account Opening",
+        "description": "Coming Soon",
+        "path": "/layouts/account-opening/"
+    },
+    {
+        "id": 2,
+        "title": "Banker",
+        "description": "Coming Soon",
+        "path": "/layouts/mbanker/"
+    }
+]

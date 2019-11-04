@@ -1,0 +1,15 @@
+<main class="site-page">
+   <h1>Skookum Angular Prototype Starter</h1>
+   <button mat-raised-button [routerLink]="['/components']">UX Components</button>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
+
+   <button (click)="showFiller = !showFiller" mat-raised-button>
+       Read More
+   </button>
+   <div *ngIf="showFiller">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
+   </div>
+
+   <mat-slider></mat-slider>
+</main>
