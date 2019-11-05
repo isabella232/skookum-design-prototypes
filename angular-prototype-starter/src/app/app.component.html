@@ -1,19 +1,12 @@
-<mat-drawer-container class="example-container" autosize>
-
-   <mat-drawer #drawer class="example-sidenav" mode="side">
-
-      <app-navbar></app-navbar>
-
-      <!-- <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-         Toggle extra text
-      </button> -->
-   </mat-drawer>
+<mat-drawer-container class="site-container" autosize>
 
    <button mat-icon-button aria-label="Toggle navigation" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
    </button>
+
+   <mat-drawer #drawer class="mat-sidenav" mode="side">
+      <app-navbar></app-navbar>
+   </mat-drawer>
 
    <router-outlet></router-outlet>
  

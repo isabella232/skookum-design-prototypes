@@ -8,8 +8,8 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getLayouts() {
-    return this.http.get('/assets/page-layouts.json')
+  getContent() {
+    return this.http.get('/assets/site-content.json')
   }
 
 }

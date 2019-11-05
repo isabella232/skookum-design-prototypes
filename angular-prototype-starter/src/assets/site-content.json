@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Google",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna.",
+        "url": "https://google.com"
+    },
+    {
+        "id": 2,
+        "title": "Apple",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna.",
+        "url": "https://apple.com"
+    },
+    {
+        "id": 3,
+        "title": "Skookum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna.",
+        "url": "https://skookum.com"
+    },
+    {
+        "id": 4,
+        "title": "Microsoft",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna.",
+        "url": "https://microsoft.com"
+    },
+    {
+        "id": 5,
+        "title": "Amazon",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna.",
+        "url": "https://amazon.com"
+    }
+]

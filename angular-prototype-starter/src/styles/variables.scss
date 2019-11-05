@@ -1,0 +1,54 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700');
+
+// Colors
+$primaryColor1:     #D71721;
+$accentColor1:      #BA5D09;
+$accentColor2:      #0E847D;
+
+$alertColor1:       #D71721;
+$alertColor2:       #EFAB39;
+$alertColor3:       #148A08;
+$linkColor:         #2D68B8;
+
+$textColor:         #444444;
+$labelColor:        #626262;
+$formColor:         #222222;
+$textAccentColor1:  #BA5D09;
+$textAccentColor2:  #0E847D;
+
+$white:             #FFFFFF;
+$gray-lighter:      #DDDDDD;
+$gray-light:        #CCCCCC;
+$gray:              #757575;
+$gray-dark:         #626262;
+$gray-darker:       #2F2F2F;
+
+$focusColor:        dodgerblue;
+$inputColor:        #626262;
+
+// Text
+$base-font-size: 16px;
+
+@mixin regularFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: $base-font-size;
+}
+
+@mixin mediumFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: $base-font-size;
+}
+
+@mixin boldFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: $base-font-size;
+}
+
+body {
+    @include regularFont();
+    color: $textColor;
+}

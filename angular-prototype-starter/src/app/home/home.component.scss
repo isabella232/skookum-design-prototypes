@@ -1,0 +1,10 @@
+@import './src/styles/variables';
+
+.content-list {
+   list-style: none;
+   margin: 1rem 0;
+   padding: 1rem;
+   li {
+      padding: 1rem 0;
+   }
+}
