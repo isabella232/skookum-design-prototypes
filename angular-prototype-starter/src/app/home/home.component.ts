@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
-import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
+import {loadStagger} from '../services/animations.service'
 
 
 @Component({
@@ -8,33 +8,27 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    trigger('loadStagger', [
-      transition('* <=> *', [
-        query(':enter',
-        [ 
-          style({ opacity: 0, transform: 'translateY(-15px)' }),
-          stagger('100ms', 
-          animate('550ms ease-out',
-          style({ opacity: 1, transform: 'translateY(0px' })))
-        ], { optional: true }),
-          query(':leave', animate('50ms', style({ opacity: 0 })), {
-          optional: true
-        })
-      ])
-    ])
+    loadStagger
   ]
 })
 
 export class HomeComponent implements OnInit {
 
-  contents$: Object;
+  results: Object;
   
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getContent().subscribe(
-      data => this.contents$ = data 
-    );
-  }
+    // For fetching flat JSON array
+    // this.data.getContent().subscribe(
+    //   data => this.results = data 
+    // );
 
+    //Fetch nested JSON objects
+    this.data.getContent()
+      .subscribe(home =>{
+        this.results = home['home']
+        console.log((Object.values(this.results)));
+    });
+  }
 }

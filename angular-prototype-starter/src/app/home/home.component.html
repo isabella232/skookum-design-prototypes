@@ -1,24 +1,32 @@
 <main class="site-page">
     <h1>Skookum Angular Prototype Starter</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
-
+    <p>A starter project to use that includes the basic things needed to build prototypes. Includes:</p>
+    <ul>
+        <li>Routing</li>
+        <li>Data Service</li>
+        <li>NG Animate</li>
+        <li>Animation Service</li>
+        <li>Global SCSS</li>
+        <li>Material Design</li>
+    </ul>
+    <button (click)="showFiller = !showFiller" mat-button color="primary">Read More</button>
+    <div *ngIf="showFiller">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
+    </div>
     <div>
         <mat-slider></mat-slider>
     </div>
 
-   <button (click)="showFiller = !showFiller" mat-button color="primary">Read More</button>
-   <div *ngIf="showFiller">
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a suscipit libero, vel fermentum urna. Sed et pulvinar massa, non sagittis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris id facilisis quam. Maecenas ut malesuada augue. Suspendisse blandit velit ultricies, egestas tellus id, pharetra dui. Aliquam cursus eu justo id accumsan. Suspendisse laoreet lectus sapien, id porttitor diam egestas id. Etiam suscipit sodales lobortis.</p>
-   </div>
-   <ul class="content-list" [@loadStagger]="contents$">
-        <li *ngFor="let content of contents$">
+
+   <ul class="content-list" [@loadStagger]="results">
+        <li *ngFor="let result of results">
             <h3>
-                <a href="{{ content.url }}" target="_blank">
-                    <i class="material-icons">open_in_new</i> {{ content.title }}
+                <a href="{{ result.url }}" target="_blank">
+                    <i class="material-icons">open_in_new</i> {{ result.title }}
                 </a>
             </h3>
-            <p>{{ content.description }}</p>
+            <p>{{ result.description }}</p>
         </li>
     </ul>
 </main>

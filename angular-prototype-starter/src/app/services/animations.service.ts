@@ -1,4 +1,4 @@
-import { animation, trigger, animateChild, group, transition, animate, style, query} from '@angular/animations';
+import { animation, trigger, animateChild, stagger, group, transition, animate, style, query} from '@angular/animations';
 
 export const fadeAnimation = trigger('fadeAnimation', [
    // The '* => *' will trigger the animation to change between any two states
@@ -25,4 +25,20 @@ export const fadeAnimation = trigger('fadeAnimation', [
        { optional: true }
      )
    ])
- ]);
+]);
+
+
+export const loadStagger = trigger('loadStagger', [
+  transition('* <=> *', [
+    query(':enter',
+    [ 
+      style({ opacity: 0, transform: 'translateY(-15px)' }),
+      stagger('100ms', 
+      animate('550ms ease-out',
+      style({ opacity: 1, transform: 'translateY(0px' })))
+    ], { optional: true }),
+      query(':leave', animate('50ms', style({ opacity: 0 })), {
+      optional: true
+    })
+  ])
+]);
