@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import {loadStagger} from '../services/animations.service'
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
